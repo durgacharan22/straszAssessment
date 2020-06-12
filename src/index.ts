@@ -1,3 +1,17 @@
-console.log("running properly");
+import { Item } from './../models/model';
 
-export const sum = (a : number, b : number) => {return a+b}
+export class Testlet{
+
+    public TestletId : string;
+    private Items : Item;
+
+    constructor (testletId : string , items : Item){
+        this.TestletId = testletId;
+        this.Items = items;
+    }
+    public Randomize() : Item {
+        
+        return this.Items;
+    }
+    
+}
